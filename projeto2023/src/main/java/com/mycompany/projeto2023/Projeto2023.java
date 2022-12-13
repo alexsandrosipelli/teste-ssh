@@ -47,19 +47,19 @@ public class Projeto2023 {
          }
     }
     
-    public  static void ixibir ()
+    public  void ixibir ()
     { 
         Scanner ler = new Scanner(System.in);
         
             String menu = "Escolha";
-            menu += " 1 digitar nomes :";
+            menu += " 1 digitar nomes : "+"/n";
             menu += "2 digitar valores:";
             menu += "3 ver nomes e valores :";
             menu += "4 sair :";
             String tecla;
             System.out.println(menu);
             tecla= ler.next();
-           while(tecla.equals(4))
+           while(tecla.equals("4"))
         {
             if (tecla.equals("1"))
             {
@@ -87,6 +87,9 @@ public class Projeto2023 {
 
     public static void main(String[] args) 
     {  
-       ixibir();
+      Projeto2023 a1 = new Projeto2023();
+       a1.ixibir();
+        
+       
     }
 }
